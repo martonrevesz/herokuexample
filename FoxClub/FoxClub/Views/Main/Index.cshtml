@@ -7,7 +7,7 @@
 <body>
     <ul>
         <li><a href="/main/@Model.Name">Information</a></li>
-        <li> @Html.ActionLink("title", "nutritionstore",  "fox" ,   new { Model.Name }, null )</li>
+        <li><a href="/fox/nutritionstore/@Model.Name">Nutrition Store</a></li>
         <li><a href="/fox/trickcenter/@Model.Name">Trick center</a></li>
     </ul>
     <img src="~/greenfox.png" alt="Green Fox Logo" />
@@ -16,7 +16,7 @@
     @if (Model.TrickList.Count != 0)
     {
         <ul>
-            @foreach (var item in Model.TrickList)  
+            @foreach (var item in Model.TrickList)
             {
             <li>@item</li>
             }
